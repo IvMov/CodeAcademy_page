@@ -1,0 +1,243 @@
+body, header, main, span, div, h1, h2, p, ul, li, a {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style-type: none;
+   
+}
+body{
+    min-width: 1100px;
+    font-family: Bw Gradual, Arial, sans-serif;
+}
+header {
+    background-color: black;
+}
+
+/* Навигация */
+nav, #dark-inside, #white-top, #white-bot{
+    margin: 0px auto;
+    min-width: 1100px;
+    max-width: 1200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px; 
+}
+
+Ul {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    display: block;
+    color: white;
+    padding: 35px 20px;
+    font-size: 10pt;
+    font-weight: 700;
+    transition: all 0.5s ease-out;
+
+}
+a.navigation:hover {
+    opacity: 90%;
+    transform: scale(0.95);
+    color: tomato;
+}
+a#tel {
+    border-radius: 20px;
+    font-size: 9pt;
+    background-color: blue;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+a#tel:hover {
+    background-color:rgb(56, 212, 240);
+    color: black;
+    transform: scale(1.1);
+}
+
+                /* Черная часть */          
+
+    #dark {
+        color: white;
+        background-color:black;
+        background-image: url(decoration-arrows.svg);
+        background-repeat: no-repeat;
+        background-size: 2000px;
+        background-attachment: fixed;
+        animation: arrows infinite 20s ease-in-out;
+    }
+        @keyframes arrows {
+            0% {
+                background-image: url(decoration-arrows.svg);
+                background-repeat: no-repeat;
+            }
+            50% {
+                background-color: rgb(37, 1, 1);
+                background-size: 1800px;
+            }
+        
+        }
+
+    #dark-inside {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    #dark-top {
+        width: 100%;
+        margin: 140px 0px 420px 200px;
+    
+    }
+    #dark-top h1 {
+        font-size: 68pt;
+        width: 600px;
+        margin-bottom: 30px;
+        
+    }
+    #dark-top p {
+        width: 320px;
+    }
+
+    #dark-left, #dark-right {
+        width: 50%;
+        padding: 20px 110px;
+        box-sizing: border-box;
+        height: 260px;
+        margin-bottom: 100px;
+    }
+
+    #dark-right {
+        border-left: solid 3px white;
+    }
+    #dark-left p, #dark-right p {
+        margin-top: 20px;
+        font-size: 11pt;
+        line-height: 18pt;
+    }
+    #dark-left a, #dark-right a {
+        margin-top: 30px;
+        display: block;
+        padding: 10px 30px;
+        width: 170px;
+        text-align: center;
+        border-radius:20px;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 10pt;
+        background-color:blue;
+
+    }
+    #dark-left a:hover, #dark-right a:hover {
+        opacity: 90%;
+        transform:scale(1.1);
+    } 
+
+                /* Белая часть */
+
+#white {
+    background-color:white;
+    color: black;
+}
+#white-top h1 {
+     font-size: 58pt;
+     padding-top: 100px;
+}
+span#puls {
+    animation: puls infinite 3s ease-out;
+}
+@keyframes puls {
+    0% {
+       opacity: 100%;
+       color: tomato;
+    }
+    5% {
+            opacity: 100%;
+            color: black;
+    }
+    10% {
+        opacity: 100%;
+        color: tomato;
+    
+     }
+    20%{
+        opacity: 100%;
+        color: black;
+        
+    }
+    50% {
+        opacity: 70%;
+        color: tomato;
+        text-shadow: -2px -2px black;
+    }
+    75% {
+        opacity: 100%;
+        color: black;
+
+    }
+
+}
+#white-top p {
+    width:42%;
+    margin: 100px 100px;
+}
+#white-bot ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px ;
+}
+.span-big {
+    font-size: 68pt;
+    line-height: 90pt;
+    font-weight: 700;
+}
+#white-bot li{
+    width: 50%;
+    box-sizing: border-box;
+}
+#span1 {
+    display: inline-block;
+    border-bottom: solid 5px blue;
+    width: 50px;
+    animation: blink infinite 1s ease-in-out;
+}
+
+
+    @keyframes blink {
+    0% {
+        border-bottom: solid 5px blue;
+    }
+    100% {
+        border-bottom: none;
+    }
+    }
+#white-bot ul {
+    position: relative;
+}
+#white-bot ul:before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 10%;
+    position: absolute;
+    background-color:black;
+    left: -10%;
+    top: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
