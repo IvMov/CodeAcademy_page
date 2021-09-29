@@ -13,13 +13,14 @@ header {
     background-color: black;
 }
 
-/* Навигация */
-nav, #dark-inside, #white-top, #white-bot{
+nav, #dark-inside, #white-top, #white-bot, #white2{
     margin: 0px auto;
     min-width: 1100px;
     max-width: 1200px;
 }
 
+
+/* Навигация */
 nav {
     display: flex;
     justify-content: space-between;
@@ -63,6 +64,7 @@ a#tel:hover {
 
     #dark {
         color: white;
+        height: 1100px;
         background-color:black;
         background-image: url(decoration-arrows.svg);
         background-repeat: no-repeat;
@@ -143,10 +145,11 @@ a#tel:hover {
 #white {
     background-color:white;
     color: black;
+    padding-bottom: 100px;
 }
 #white-top h1 {
      font-size: 58pt;
-     padding-top: 100px;
+     padding-top: 200px;
 }
 span#puls {
     animation: puls infinite 3s ease-out;
@@ -189,7 +192,6 @@ span#puls {
 #white-bot ul {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 200px ;
 }
 .span-big {
     font-size: 68pt;
@@ -218,18 +220,201 @@ span#puls {
     }
 #white-bot ul {
     position: relative;
+    margin-left: 100px;
 }
+
 #white-bot ul:before {
     content: '';
     display: block;
     width: 3px;
-    height: 10%;
-    position: absolute;
+    height: 15%;
+    position: absolute; 
     background-color:black;
-    left: -10%;
-    top: 50%;
+    left: -100px;
+    top: 90%;
+} 
 
+
+                /* Белая часть 2 */
+
+
+#white2 {
+    background-color:white;
+    color:black;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
+   
+#white2 h1 {
+    font-size: 58pt;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+#white2-left {
+    width: 25%;
+    box-sizing:border-box;
+    line-height: 1.5em;
+    padding-right: 16px;
+}
+
+        /* Цветная дивная рамка розовый-синий-голубой и стрелочки */
+
+#white2-right {
+    width: 75%;
+    box-sizing:border-box;
+    position: relative;
+    height: 440px;
+}
+
+#white2-right > * {
+    position: absolute;
+}
+.colors-inside {
+    width: 90%;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius:10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+ .white-violet {
+    color:white;
+    height: 90%;
+    background-color:#fe00e8;
+    top: 0px;
+    left: 0px; 
+} 
+.white-blue {
+    color:white;
+    height: 82%;
+    background-color:blue;
+    left:2%;
+    top:14%;
+}
+.white-blue p {
+    width: 35%;
+}
+.white-bluer {
+    height: 85%;
+    background-color: rgb(0, 255, 255);
+    width: 47%;
+    left: 50%;
+    top: 20%;
+}
+p.centras { 
+    padding-bottom: 10px;
+    width: 95%;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+.white-bluer p { 
+    width: 85%;
+}
+
+
+
+.white-black {
+    top: 75%;
+    left: 4%;
+    display: flex;
+}
+
+.white-black-inside {
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 1px 1px;
+}
+
+.white-black-inside:first-child {
+    background-color:black;
+    border-radius: 10px 0px 0px 10px;
+    padding: 25px 5px;
+    width: 110px;
+    text-align: center;
+}
+.white-black-inside:nth-child(2) {
+    background-color:black;
+    border-radius: 0px 12px 12px 0px;
+    width: 110px;
+    padding: 25px 12px;
+    line-height: 30px;
+    text-align: center;
+}
+.white-black-inside:nth-child(4) {
+    background-color:black;
+    border-radius: 12px;
+    width: 70px;
+    padding: 25px 12px;
+    line-height: 30px;
+    text-align: center;
+}
+.white-black-inside:nth-child(6) {
+    background-color:black;
+    border-radius: 12px 0px 0px 12px;
+    width: 110px;
+    padding: 25px 12px;
+    text-align: center;
+}
+.white-black-inside:nth-child(7) {
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.white-black-inside:nth-child(9) {
+    background-color:black;
+    border-radius: 12px;
+    width: 80px;
+    line-height: 30px;
+    padding: 25px 12px;
+    text-align: center;
+}
+        .inside-inside1 {
+            background-color:black;
+            width: 125px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 0px 12px 0px 0px;
+            height: 49%;
+            padding: 13px 12px 3px 12px;
+        }
+        .inside-inside2 {
+            background-color:black;
+            width: 125px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 0px 0px 12px 0px;
+            height: 49%;
+            padding: 5px 12px 3px 12px;
+        }
+
+.inside-white {
+    width: 36px;
+    background-color: white;
+    border-radius: 12px;
+}
+.inside-white{
+    position: relative;
+    height: 78px;
+}
+.inside-white:after { 
+    content: '>';
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    top:33%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
 
 
 
