@@ -152,7 +152,6 @@ a#tel:hover {
 #white-top h1 {
      font-size: 58pt;
      padding-top: 10%;
-     padding-left: 15%;
 }
 span#puls {
     animation: puls infinite 3s ease-out;
@@ -235,7 +234,7 @@ span#puls {
     position: absolute; 
     background-color:black;
     left: -100px;
-    top: 90%;
+    top: 85%;
 } 
 
 /* Белая часть 2 */
@@ -253,7 +252,6 @@ span#puls {
 #white2 h1 {
     font-size: 58pt;
     padding-bottom: 50px;
-    padding-left: 15%;
     width: 100%;
 }
 
@@ -440,13 +438,80 @@ span#puls {
         }
     }
 
-/* Медиазапрос до 1000 */
+ /* Белая часть 4 с таблицей */
+
+.white4 {
+    color: black; 
+    padding-bottom: 100px;
+}
+
+.white4 h1 {
+    font-size: 58pt;
+    padding-bottom: 50px;
+    padding-left: 15%;
+    width: 100%;
+}
+.white4 p a, .white4 table a {
+    display: inline;
+    padding: 0px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.white4 p {
+    position: relative;
+    margin-left: 100px;
+    padding-left: 20%;
+    font-size: 1.2em;
+}
+
+.white4 p:before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: absolute; 
+    background-color:black;
+    left: 5%;
+    top: 0px;
+} 
+table {
+    width:70%;
+    margin: 50px auto;
+    border-collapse: collapse; 
+}
+thead tr:not(:first-child), tbody tr{
+    border-top: 1px solid rgb(182, 182, 182);
+}
+th, td {
+    padding: 20px 5px;
+    text-align: center;
+}
+th:first-child {
+    text-align: left;
+}
+table td:nth-child(2), table th:nth-child(2){
+    background-color:rgb(12, 12, 184);
+    color: white;
+}
+table thead tr:first-child th:nth-child(2){
+    border-radius:10px 10px 0px 0px;
+}
+table tbody tr:last-child td:nth-child(2){
+    border-radius:0px 0px 10px 10px;
+}
+
+
+
+
+/* Медиазапрос 768px до 1000px */
 
 @media screen and (max-width: 1000px) {
     body{
         min-width: 768px;
     }
-    nav, #dark-inside, #white-top, #white-bot, #white2{
+    nav, #dark-inside, #white-top, #white-bot, #white2, .white4{
         min-width: 768px;
         max-width: 1000px;
     }
@@ -469,7 +534,7 @@ span#puls {
         width: 600px;
         margin-bottom: 30px; 
     }
-    #white-top h1 {
+    #white-top h1, .white4 h1 {
         font-size: 48pt;
    }
     .span-big {
@@ -500,14 +565,22 @@ span#puls {
         font-size: 9px;
         font-weight: normal;
     }
+    table {
+        width: 98%;
+    }
+    th, td {
+        padding: 10px 5px;
+        font-size: 0.9em;
+    }
 }
- /* Медиазапрос до 700 */
+
+/* Медиазапрос 425px до 700px */
 
  @media screen and (max-width: 767px) {
     body{
         min-width: 425px;
     }
-    nav, #dark-inside, #white-top, #white-bot, #white2{
+    nav, #dark-inside, #white-top, #white-bot, #white2, .white4{
         min-width: 425px;
         max-width: 767px;
     }
@@ -543,7 +616,7 @@ span#puls {
     #dark-top {
         box-sizing: border-box;
     }
-    #dark-top h1 {
+    #dark-top h1, .white4 h1{
         font-size: 42pt;
         width: 100%;
         margin-top: 15%;
@@ -586,11 +659,20 @@ span#puls {
         font-weight: 700;
     }
     .big div {
-        font-size: 9px;
+        font-size: 8px;
         font-weight: normal;
     }
-    #white2 h1 {
+    .big {
+        height:40px;
+    }
+    #white2 h1, .white4 h1 {
         font-size: 36px;
+    }
+    
+    th, td {
+        padding: 5px 5px;
+        font-size: 0.8em;
     }
 
 }
+
