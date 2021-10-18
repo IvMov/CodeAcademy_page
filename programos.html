@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAcademy siūlomi kursai | CodeAcademy</title>
+    <link rel="stylesheet" href="programos-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="codeacademy-black.svg" alt="logo"></a>
+            <ul>
+                <li><a class="navigation" href="https://codeacademy.lt/studentams/">Studentams</a></li>
+                <li><a class="navigation" href="https://codeacademy.lt/verslui/">Verslui</a></li>
+                <li><a class="navigation active" href="programos.html">Programos</a></li>
+                <li><a class="navigation" href="https://codeacademy.lt/apie/">Apie mus</a></li>
+                <li><a class="navigation" href="https://codeacademy.lt/naujienos/">Naujenos</a></li>
+                <li><a class="navigation" href="https://www.codeacademy.lt/testas/">IT testas</a></li>
+                <li><a class="navigation" href="https://codeacademy.lt/kontaktai/">Kontaktai</a></li>
+                <li><a id="tel" href="tel: +37060985783" data-tel:="+37060985783">Skambinti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="top">
+            <h1>Programos</h1>
+            <div class="img-wrapper">
+                <a href="#"><img class="Desktop" src="Desktop_banner-2048x140.jpg"></a>
+                <a href="#"><img class="Mobile" src="Mobile_banner.jpg"></a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="left-sidebar">
+                <div class="mobile-button">
+                    <button  onclick="filtrasOpen(); scrollTo();"  id="Button-filtras-open">Filtras</button>
+                </div>
+                <div class="left-wrapper" id="left-wrapper">
+                    <h2>Rasta n programų</h2>
+                    <form>
+                        <div class="forms-left">
+                            <label for="Tema">Tema</label>
+                            <select name="tema">
+                                <option value="All">Visos</option>
+                                <option value="programavimas">Programavimas</option>
+                                <option value="dizainas">Dizainas</option>
+                                <option value="duomenys">Duomenys</option>
+                                <option value="rinkodara">Rinkodara</option>
+                            </select>
+
+                            <label for="vieta">Vieta</label>
+                            <select name="vieta">
+                                <option value="All">Visos</option>
+                                <option value="online">Online</option>
+                                <option value="vilnius">Vilnius</option>
+                                <option value="kaunas">Kaunas</option>
+                                <option value="klaipeda">Klaipėda</option>
+                            </select>
+
+                            <label for="Tipas">Tipas</label>
+                            <select name="Tipas">
+                                <option value="All">Visos</option>
+                                <option value="online">pradedanciu-kursai</option>
+                                <option value="vilnius">pazengusiu-studijos</option>
+                                <option value="kaunas">studijos-101</option>
+                                <option value="klaipeda">Finansuojama UŽT</option>
+                                <option value="klaipeda">nemokamos-studijos</option>
+                            </select>
+                        </div>  
+                        <div class="forms-right">
+                            <label for="checkbox">Laikas</label> 
+                            <input type="checkbox" id="Dienomis" name="vehicle3">
+                            <label for="Dienomis">Dienomis</label> 
+                            <input type="checkbox" id="Vakarais" name="vehicle3">
+                            <label for="Vakarais">Vakarais</label> 
+                            <button onclick="filtrasClose()" id="Button-filtras-close">IEŠKOTI</button>
+                            <input class="reset-button" type="reset" value="IŠVALYTI">
+                        </div>  
+                    </form>
+                </div>
+            </div>
+            <div class="right-contentbar">
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-1.svg">
+                        <h3>Web Dizainas UX/UI – UŽT finansuojama</h3>
+                        <p>
+                            Web dizaineris privalo užtikrinti ne tik patrauklų svetainės vaizdą, informatyvumą, bet ir patogumą – suderinti pateikiamą informaciją, vaizdus bei navigaciją: kitaip tariant, įlįsti į vartotojo kailį.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-5.svg">
+                        <h3>Java – UŽT finansuojama</h3>
+                        <p>
+                            JavaScript formalaus ugdymo programa skirta pradedantiesiems programuotojams, kurie baigę kursus nori gauti formalaus švietimo diplomą.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-1.svg">
+                        <h3>Web Dizainas UX/UI – UŽT finansuojama</h3>
+                        <p>
+                            Web dizaineris privalo užtikrinti ne tik patrauklų svetainės vaizdą, informatyvumą, bet ir patogumą – suderinti pateikiamą informaciją, vaizdus bei navigaciją: kitaip tariant, įlįsti į vartotojo kailį.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-5.svg">
+                        <h3>Java – UŽT finansuojama</h3>
+                        <p>
+                            JavaScript formalaus ugdymo programa skirta pradedantiesiems programuotojams, kurie baigę kursus nori gauti formalaus švietimo diplomą.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+                
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-5.svg">
+                        <h3>Java – UŽT finansuojama</h3>
+                        <p>
+                            JavaScript formalaus ugdymo programa skirta pradedantiesiems programuotojams, kurie baigę kursus nori gauti formalaus švietimo diplomą.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+                
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-1.svg">
+                        <h3>Web Dizainas UX/UI – UŽT finansuojama</h3>
+                        <p>
+                            Web dizaineris privalo užtikrinti ne tik patrauklų svetainės vaizdą, informatyvumą, bet ir patogumą – suderinti pateikiamą informaciją, vaizdus bei navigaciją: kitaip tariant, įlįsti į vartotojo kailį.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-5.svg">
+                        <h3>Java – UŽT finansuojama</h3>
+                        <p>
+                            JavaScript formalaus ugdymo programa skirta pradedantiesiems programuotojams, kurie baigę kursus nori gauti formalaus švietimo diplomą.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-5.svg">
+                        <h3>Java – UŽT finansuojama</h3>
+                        <p>
+                            JavaScript formalaus ugdymo programa skirta pradedantiesiems programuotojams, kurie baigę kursus nori gauti formalaus švietimo diplomą.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-1.svg">
+                        <h3>Web Dizainas UX/UI – UŽT finansuojama</h3>
+                        <p>
+                            Web dizaineris privalo užtikrinti ne tik patrauklų svetainės vaizdą, informatyvumą, bet ir patogumą – suderinti pateikiamą informaciją, vaizdus bei navigaciją: kitaip tariant, įlįsti į vartotojo kailį.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-5.svg">
+                        <h3>Java – UŽT finansuojama</h3>
+                        <p>
+                            JavaScript formalaus ugdymo programa skirta pradedantiesiems programuotojams, kurie baigę kursus nori gauti formalaus švietimo diplomą.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+                
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+                
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-5.svg">
+                        <h3>Java – UŽT finansuojama</h3>
+                        <p>
+                            JavaScript formalaus ugdymo programa skirta pradedantiesiems programuotojams, kurie baigę kursus nori gauti formalaus švietimo diplomą.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-4.svg">
+                        <h3>Dirbtinis Intelektas – pažengusių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+                
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-1.svg">
+                        <h3>Web Dizainas UX/UI – UŽT finansuojama</h3>
+                        <p>
+                            Web dizaineris privalo užtikrinti ne tik patrauklų svetainės vaizdą, informatyvumą, bet ir patogumą – suderinti pateikiamą informaciją, vaizdus bei navigaciją: kitaip tariant, įlįsti į vartotojo kailį.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-2.svg">
+                        <h3>TypeScript – UŽT finansuojama</h3>
+                        <p>
+                            Front-End programuotojas – tikra būtinybė moderniam verslui, todėl ši sritis yra paklausiausia darbo rinkoje.
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+
+                <div class="lesson-element">
+                    <a href="#">
+                        <img class="lesson-img" src="lesson-3.svg">
+                        <h3>PHP – pradedančių</h3>
+                        <p>
+                            Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. 
+                        </p>
+                        <ul class="bot-lesson-png">
+                            <li>&#9762; Nebezpeka</li>
+                            <li>&#9760; Sunkumas</li>
+                        </ul>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        function filtrasOpen() {
+    document.getElementById("left-wrapper").style.display = "block";
+    }
+        function filtrasClose() {
+    document.getElementById("left-wrapper").style.display = "none";
+    }
+    function scrollTo() {
+  var elmnt = document.getElementById("left-wrapper");
+  elmnt.scrollIntoView();
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+@charset "UTF-8";
+body, header, main, span, div, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(242, 242, 242, 0.8);
+  -webkit-box-shadow: rgba(11, 2, 90, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(11, 2, 90, 0.45) 0px 25px 20px -20px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px auto;
+}
+
+nav > a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 5px 5px;
+}
+
+nav > a img {
+  height: 70%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 3px 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: black;
+  -webkit-transition: color .5s ease-in-out, text-shadow .5s ease-in-out;
+  transition: color .5s ease-in-out, text-shadow .5s ease-in-out;
+}
+
+nav ul li a.active {
+  color: #af0000;
+  text-shadow: 0px 0px 15px #FF6E44;
+}
+
+nav ul li a:hover {
+  color: #af0000;
+  text-shadow: 0px 0px 15px #FF6E44;
+}
+
+nav ul li:last-child #tel {
+  border-radius: 10px;
+  background-color: #FF6E44;
+  color: white;
+  -webkit-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+}
+
+nav ul li:last-child #tel:hover {
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  background-color: inherit;
+  border: 1px solid tomato;
+  color: #FF6E44;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 6rem auto;
+}
+
+main .top {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+main .top h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+main .top .img-wrapper {
+  position: relative;
+}
+
+main .top .img-wrapper:after {
+  content: "↬";
+  font-weight: 700;
+  font-size: 4rem;
+  color: #1828ff;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+
+main .main-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .main-container .left-sidebar {
+  width: 80%;
+  margin: 0px auto;
+}
+
+main .main-container .left-sidebar h2 {
+  font-size: 1.2rem;
+}
+
+main .main-container .left-sidebar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+main .main-container .left-sidebar form .forms-right {
+  width: 48%;
+}
+
+main .main-container .left-sidebar form label {
+  font-weight: 700;
+  padding: .2rem 0;
+}
+
+main .main-container .left-sidebar form select {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 90%;
+}
+
+main .main-container .left-sidebar form * {
+  display: block;
+}
+
+main .main-container .left-sidebar button#Button-filtras-open {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0.4;
+  top: 18.5%;
+}
+
+main .main-container .left-sidebar button#Button-filtras-open:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+main .main-container .left-sidebar #Button-filtras-open, main .main-container .left-sidebar #Button-filtras-close, main .main-container .left-sidebar .reset-button {
+  display: inline-block;
+  width: 70%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #1828ff;
+  border: 1px solid #1828ff;
+  color: white;
+  font-size: 1.1rem;
+  margin: 2%;
+}
+
+main .main-container .right-contentbar {
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main-container .right-contentbar .lesson-element {
+  margin-bottom: 2%;
+  background-color: white;
+  position: relative;
+}
+
+main .main-container .right-contentbar .lesson-element:hover {
+  cursor: pointer;
+}
+
+main .main-container .right-contentbar .lesson-element:hover:before {
+  content: "MELAS 😱";
+  font-weight: 700;
+}
+
+main .main-container .right-contentbar .lesson-element:before {
+  content: "NEMOKAMA";
+  position: absolute;
+  background-color: #f718ff;
+  padding: .7rem;
+  font-size: .9rem;
+  top: 5%;
+  left: 70%;
+  color: white;
+  border-radius: 0 50%;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+main .main-container .right-contentbar .lesson-element a {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+
+main .main-container .right-contentbar .lesson-element a h3 {
+  font-size: 1.5rem;
+}
+
+main .main-container .right-contentbar .lesson-element a p {
+  display: inline-block;
+  width: 70%;
+}
+
+main .main-container .right-contentbar .lesson-element a ul {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1em 0;
+}
+
+main .main-container .right-contentbar .lesson-element img {
+  height: 5rem;
+}
+
+@media screen and (max-width: 760px) {
+  nav {
+    max-width: 760px;
+  }
+  nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav ul li {
+    width: 50%;
+  }
+  main {
+    max-width: 760px;
+  }
+  main .top h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 10%;
+  }
+  main .top .img-wrapper {
+    width: 80%;
+    margin: 0px auto;
+  }
+  main .top img.Desktop {
+    display: none;
+  }
+  main .left-sidebar .left-wrapper {
+    display: none;
+    border: 1px solid #f718ff;
+  }
+  main .left-sidebar .left-wrapper h2 {
+    padding-left: 1rem;
+  }
+  main .lesson-element {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  nav {
+    max-width: 1000px;
+    padding: 0 0.5rem;
+  }
+  nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav ul li {
+    width: 25%;
+  }
+  main {
+    max-width: 1000px;
+    padding: 0 1.5rem;
+  }
+  main .main-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .main-container .left-sidebar {
+    width: 30%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    left: 2%;
+    top: 10%;
+  }
+  main .main-container .left-sidebar form {
+    display: block;
+  }
+  main .main-container .left-sidebar form .forms-right {
+    width: 90%;
+  }
+  main .main-container .left-sidebar #Button-filtras-open, main .main-container .left-sidebar #Button-filtras-close {
+    display: none;
+  }
+  main .main-container .right-contentbar {
+    padding-right: 2%;
+    width: 68%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .main-container .right-contentbar .lesson-element {
+    width: 49%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.5rem;
+  }
+  main img.Desktop {
+    display: block;
+  }
+  main img.Mobile {
+    display: none;
+  }
+  main .left-sidebar .left-wrapper {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav {
+    max-width: 1200px;
+  }
+  nav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li a {
+    padding: 5px 10px;
+  }
+  main {
+    max-width: 1200px;
+  }
+  main .main-container .left-sidebar {
+    width: 24%;
+  }
+  main .main-container .right-contentbar {
+    width: 74%;
+  }
+  main .main-container .right-contentbar .lesson-element {
+    width: 32%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  main .main-container .right-contentbar .lesson-element a img {
+    height: 4rem;
+  }
+  main .main-container .right-contentbar .lesson-element a h3 {
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=programos-style.css.map */
